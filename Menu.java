@@ -16,19 +16,19 @@ public class Menu {
             int choice = userIn.nextInt();
             if(choice == 1){
 
-                GameOperations.ArrayMin(arr);
+                System.out.println(GameOperations.ArrayMin(arr));
             }
             else if(choice == 2){
-                GameOperations.ArrayMax(arr);
+                System.out.println(GameOperations.ArrayMax(arr));
             }
             else if(choice == 3){
-                GameOperations.Average(arr);
+                System.out.println(GameOperations.Average(arr));
             }
             else if(choice == 4){
-                GameOperations.oddIndex(arr);
+                System.out.println(GameOperations.oddIndex(arr));
             }
             else if(choice == 5){
-                GameOperations.evenIndex(arr);
+                System.out.println(GameOperations.oddIndex(arr));
             }
             else if(choice== 6){
                 userIn.close();
