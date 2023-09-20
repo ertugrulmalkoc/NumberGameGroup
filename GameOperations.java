@@ -2,14 +2,19 @@ import java.util.Arrays;
 
 public class GameOperations {
 
-    public static void main(String[] args) {
+    /*
+     * public static void main(String[] args) {
         int[] intArray = new int[]{1,2,3,4,5,6,7,8,9,10};
 
         System.out.println(ArrayMax(intArray));
         System.out.println(ArrayMin(intArray));
         System.out.println(Average(intArray));
+        System.out.println(evenIndex(intArray));
+        System.out.println(oddIndex(intArray));
         System.out.println(Arrays.toString(averageArray(intArray)));
     }
+     */
+
 
     public static int ArrayMin (int[] numbers) {
         int min = numbers[0];
@@ -48,6 +53,27 @@ public class GameOperations {
         }
         return result;
     }
+
+    public static int evenIndex (int[] numbers) {
+        int evenSum = 0;
+        for(int i = 0; i<numbers.length; i++){
+            if(i%2 == 0){
+                evenSum += numbers[i];
+            }
+        }
+        return evenSum;
+    }
+
+    public static int oddIndex (int[] numbers) {
+        int oddSum = 0;
+        for(int i = 0; i<numbers.length; i++){
+            if(i%2 == 1){
+                oddSum += numbers[i];
+            } 
+        }
+        return oddSum;
+    }
+
 }
     
 
